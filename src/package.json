@@ -1,0 +1,26 @@
+{
+  "name": "Boilerplates",
+  "version": "1.0.0",
+  "description": "Generic boilerplates",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/goldnarms/Boilerplates"
+  },
+  "keywords": [
+    "Boilerplate"
+  ],
+  "author": "Arnstein Johansen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/goldnarms/Boilerplates/issues"
+  },
+  "homepage": "https://github.com/goldnarms/Boilerplates",
+  "devDependencies": {
+    "bower": "^1.3.12",
+    "grunt": "^0.4.5"
+  }
+}
