@@ -21,6 +21,13 @@ module.exports = function(grunt) {
         dest: 'dist/<%= pkg.name %>.js'
       }
     },
+    ts: {
+        target: {
+            reference: "./app/_localReferences.ts",
+            src: ['app/*.ts', 'app/**/*.ts'],
+            outDir: ''
+        }
+    },
     uglify: {
       options: {
         banner: '<%= banner %>'
@@ -55,9 +62,6 @@ module.exports = function(grunt) {
         src: ['lib/**/*.js', 'test/**/*.js']
       }
     },
-    qunit: {
-      files: ['test/**/*.html']
-    },
     watch: {
       gruntfile: {
         files: '<%= jshint.gruntfile.src %>',
@@ -70,14 +74,14 @@ module.exports = function(grunt) {
     }
   });
 
-  // These plugins provide necessary tasks.
+    // These plugins provide necessary tasks.
+  grunt.loadNpmTasks("grunt-ts");
   grunt.loadNpmTasks('grunt-contrib-concat');
   grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-qunit');
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
 
   // Default task.
-  grunt.registerTask('default', ['jshint', 'qunit', 'concat', 'uglify']);
+  grunt.registerTask('default', ['jshint', 'ts', 'concat', 'uglify']);
 
 };
