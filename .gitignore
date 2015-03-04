@@ -181,4 +181,4 @@ UpgradeLog*.htm
 
 # Microsoft Fakes
 FakesAssemblies/
-src/Boilerplate/Boilerplate.Web/js/external
+src/Boilerplate.Web/js/external
