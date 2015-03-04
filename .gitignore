@@ -182,5 +182,6 @@ UpgradeLog*.htm
 # Microsoft Fakes
 FakesAssemblies/
 
-src\Boilerplates.Web\bower_components
-src\Boilerplates.Web\node_modules
+src/Boilerplates.Web/bower_components
+src/Boilerplates.Web/node_modules
+src/Boilerplates.Web/wwwroot/lib
