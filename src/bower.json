@@ -1,0 +1,23 @@
+{
+  "name": "Boilerplates",
+  "version": "0.0.0",
+  "homepage": "https://github.com/goldnarms/Boilerplates",
+  "authors": [
+    "goldnarms <arnstej@gmail.com>"
+  ],
+  "description": "Mvc boilerplate",
+  "main": "index.html",
+  "keywords": [
+    ".net",
+    "mvc"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
