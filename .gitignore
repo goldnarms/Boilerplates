@@ -184,3 +184,4 @@ FakesAssemblies/
 src/Boilerplate.Web/js/external
 src/Boilerplate.Web/typings
 
+src/Boilerplate.Web/js/vendor.js
